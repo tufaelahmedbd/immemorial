@@ -1,10 +1,14 @@
 import { useRef } from "react";
+import { useGsapShutterUnveil } from "../hooks/gspa";
 
 const Hero = () => {
+  const heroRef = useRef(null);
   const shutter1 = useRef(null);
   const shutter2 = useRef(null);
+  useGsapShutterUnveil(shutter1, 0, heroRef);
+  useGsapShutterUnveil(shutter2, 0.2, heroRef);
   return (
-    <section className="hero wrapper">
+    <section className="hero wrapper" ref={heroRef}>
       <h1 className="ethereal">
         Ethereal <span ref={shutter1}></span>
       </h1>

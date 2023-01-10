@@ -107,7 +107,6 @@ section {
 }
 .ethereal span,
 .canvas span {
-  background-color: #d53f41;
   position: absolute;
   left: 0;
   right: 0;
@@ -115,4 +114,5 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
+  background-color: var(--color-lighter);
 }
