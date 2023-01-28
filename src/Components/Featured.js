@@ -2,7 +2,7 @@ import { useRef } from "react";
 import {
   useGsapFeatureLeftShutterUnveil,
   useGsapFeatureRightShutterUnveil,
-} from "../hooks/gspa";
+} from "../hooks/gsap";
 
 const Featured = () => {
   const featureRef = useRef(null);

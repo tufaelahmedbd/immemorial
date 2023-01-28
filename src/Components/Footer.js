@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useGsapFooterHeadline } from "../hooks/gspa";
+import { useGsapFooterHeadline } from "../hooks/gsap";
 
 const Footer = () => {
   const footerRef = useRef(null);

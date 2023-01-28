@@ -65,18 +65,18 @@ section {
   text-transform: lowercase;
 }
 .links,
-.favourite-link {
+.blog-link {
   font-weight: 700;
 }
 
 .links a,
-.favourite-link a {
+.blog-link a {
   color: var(--color-dark);
   position: relative;
 }
 
 .links a::after,
-.favourite-link a::after {
+.blog-link a::after {
   content: "";
   width: 0%;
   height: 0.2rem;
@@ -88,7 +88,7 @@ section {
   transition: 0.5s;
 }
 .links a:hover::after,
-.favourite-link a:hover::after {
+.blog-link a:hover::after {
   width: 120%;
 }
 .logo a {

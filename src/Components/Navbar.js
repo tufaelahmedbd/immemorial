@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { useGsapDownStagger } from "../hooks/gspa";
+import { useGsapDownStagger } from "../hooks/gsap";
 const Navbar = () => {
   const li1 = useRef(null);
   const li2 = useRef(null);
   const li3 = useRef(null);
-  const favRef = useRef(null);
+  const blogRef = useRef(null);
   const logoRef = useRef(null);
 
   const liArr = [li1, li2, li3];
-  const favarr = [favRef];
+  const favarr = [blogRef];
   const logoArr = [logoRef];
   useGsapDownStagger(liArr, 0.9);
   useGsapDownStagger(logoArr, 1.5);
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="navbar wrapper">
       <ul className="links">
         <li ref={li1}>
-          <Link to="/feature">Feature</Link>
+          <Link to="/featured">Feature</Link>
         </li>
         <li ref={li2}>
           <Link to="/about">About</Link>
@@ -33,8 +33,8 @@ const Navbar = () => {
           <h2>Immemorial</h2>
         </Link>
       </div>
-      <div className="favourite-link" ref={favRef}>
-        <Link to="/favourites">Favourites</Link>
+      <div className="blog-link" ref={blogRef}>
+        <Link to="/blog">Blog</Link>
       </div>
     </nav>
   );

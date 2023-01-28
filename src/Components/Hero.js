@@ -3,7 +3,7 @@ import {
   useGsapShutterUnveil,
   useGsapPhotoDropping,
   useGsapPhotoLevitate,
-} from "../hooks/gspa";
+} from "../hooks/gsap";
 
 const Hero = () => {
   const heroRef = useRef(null);

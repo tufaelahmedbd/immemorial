@@ -3,7 +3,7 @@ import {
   useGsapGalleryTitle,
   useGsapGalleryCategory,
   useGsapGalleryImage,
-} from "../hooks/gspa";
+} from "../hooks/gsap";
 
 const GalleryItem = ({ image }) => {
   const galleryTitleRef = useRef(null);
