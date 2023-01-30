@@ -257,3 +257,21 @@ section {
   text-transform: lowercase;
   color: var(--color-primary);
 }
+.not-found {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: flex-start;
+  column-gap: 5vw;
+  row-gap: 1vw;
+  padding: 5vw 0;
+}
+
+.headline-1 {
+  padding-top: 10vh;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
+}

@@ -224,3 +224,22 @@ export const useGsapFooterHeadline = (item, trig) => {
     );
   }, []);
 };
+
+export const useGsapNotFoundHeadline = (item, delay = 0) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-100vw",
+      },
+      {
+        x: "-50%",
+        duration: 1.5,
+        ease: Expo.easeInOut,
+        delay: delay,
+      }
+    );
+  }, []);
+};
